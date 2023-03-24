@@ -1,0 +1,12 @@
+// DoR
+- Defined user story in specific format
+- The user story is actionable
+- The user story has clear acceptance criteria 
+- The user story can be completed within one sprint
+
+
+// DoD
+- Code in standard format
+- Code passes acceptance test
+- Review 2 team members
+- Reviewed by 2 team members
