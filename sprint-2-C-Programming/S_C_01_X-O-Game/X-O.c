@@ -41,8 +41,6 @@ int main()
 {
     printf("Welcome to the X-O Game!\n");
 
-
-    printf("Welcome to Tic Tac Toe!\n");
     drawBoard(board);
 
     // Set player configurations
