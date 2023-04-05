@@ -1,8 +1,6 @@
 #ifndef MOTOR_DRIVER_H
 #define MOTOR_DRIVER_H
 
-#include <stdint.h>
-
 /* Initialize motor driver */
 void init_motor(int motor_id);
 
