@@ -1,8 +1,6 @@
 #ifndef TIMER_DRIVER_H
 #define TIMER_DRIVER_H
 
-#include <stdint.h>
-
 /* Initialize timer driver */
 void timer_init(void);
 
