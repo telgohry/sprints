@@ -1,8 +1,6 @@
 #ifndef DIO_DRIVER_H
 #define DIO_DRIVER_H
 
-#include <stdint.h>
-
 /* Initialize DIO driver */
 void DIO_Init(void);
 
