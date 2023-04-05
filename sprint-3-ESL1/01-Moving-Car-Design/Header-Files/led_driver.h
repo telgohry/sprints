@@ -1,8 +1,6 @@
 #ifndef LED_DRIVER_H
 #define LED_DRIVER_H
 
-#include <stdint.h>
-
 /* Initialize LED driver */
 void init_led(int led_id);
 
