@@ -1,9 +1,6 @@
 #ifndef BUTTON_DRIVER_H
 #define BUTTON_DRIVER_H
 
-#include <stdint.h>
-#include <stdbool.h>
-
 /* Initialize button driver */
 void init_button(int button_id);
 
