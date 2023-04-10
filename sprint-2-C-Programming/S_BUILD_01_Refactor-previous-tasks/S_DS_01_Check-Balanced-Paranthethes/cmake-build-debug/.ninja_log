@@ -1,0 +1,23 @@
+# ninja log v5
+4	172	7028390406900685	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/main.c.obj	22c444b27a19f715
+173	359	7028390408616093	S_DS_01_Check_Balanced_Paranthethes.exe	f47cf6543ba36309
+11	266	7028392179688042	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/balanced.c.obj	3ef3f312c14410e
+18	274	7028392179887499	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/stack.c.obj	e26817c912c17168
+3	305	7028392180366221	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/main.c.obj	22c444b27a19f715
+305	678	7028392183866862	S_DS_01_Check_Balanced_Paranthethes.exe	334bca220e20f3df
+11	125	7028393081704019	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/stack.c.obj	e26817c912c17168
+3	171	7028393082172781	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/main.c.obj	22c444b27a19f715
+172	341	7028393083778467	S_DS_01_Check_Balanced_Paranthethes.exe	334bca220e20f3df
+10	139	7028393522777802	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/stack.c.obj	e26817c912c17168
+3	143	7028393522827617	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/main.c.obj	22c444b27a19f715
+144	298	7028393524453266	S_DS_01_Check_Balanced_Paranthethes.exe	334bca220e20f3df
+11	158	7028394381433946	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/balanced.c.obj	3ef3f312c14410e
+2	175	7028394381653353	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/main.c.obj	22c444b27a19f715
+16	180	7028394381653353	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/stack.c.obj	e26817c912c17168
+180	517	7028394385034333	S_DS_01_Check_Balanced_Paranthethes.exe	334bca220e20f3df
+15	647	7028439229419594	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/balanced.c.obj	3ef3f312c14410e
+3	652	7028439229629038	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/main.c.obj	22c444b27a19f715
+22	655	7028439229668930	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/stack.c.obj	e26817c912c17168
+655	821	7028439231325219	S_DS_01_Check_Balanced_Paranthethes.exe	334bca220e20f3df
+3	107	7028439302705785	CMakeFiles/S_DS_01_Check_Balanced_Paranthethes.dir/main.c.obj	22c444b27a19f715
+108	225	7028439303832770	S_DS_01_Check_Balanced_Paranthethes.exe	334bca220e20f3df

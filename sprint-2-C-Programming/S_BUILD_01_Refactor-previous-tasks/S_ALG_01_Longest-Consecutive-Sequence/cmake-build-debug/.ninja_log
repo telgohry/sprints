@@ -1,0 +1,9 @@
+# ninja log v5
+3	148	7028439818631844	CMakeFiles/S_ALG_01_Longest_Consecutive_Sequence.dir/main.c.obj	d9785974e483ebde
+149	302	7028439820087934	S_ALG_01_Longest_Consecutive_Sequence.exe	c0b19c04653ff230
+2	234	7028442776010646	CMakeFiles/S_ALG_01_Longest_Consecutive_Sequence.dir/main.c.obj	d9785974e483ebde
+8	241	7028442776050534	CMakeFiles/S_ALG_01_Longest_Consecutive_Sequence.dir/lcs.c.obj	d24b09ee7bc4d040
+14	242	7028442776130316	CMakeFiles/S_ALG_01_Longest_Consecutive_Sequence.dir/sort.c.obj	207ff4f0fc953325
+242	379	7028442777616334	S_ALG_01_Longest_Consecutive_Sequence.exe	e34f8a7418fcdc3d
+3	113	7028442886021686	CMakeFiles/S_ALG_01_Longest_Consecutive_Sequence.dir/main.c.obj	d9785974e483ebde
+119	255	7028442887378038	S_ALG_01_Longest_Consecutive_Sequence.exe	e34f8a7418fcdc3d
