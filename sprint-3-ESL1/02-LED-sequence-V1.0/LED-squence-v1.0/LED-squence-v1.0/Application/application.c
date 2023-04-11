@@ -10,33 +10,91 @@
 
 // Global variables
 
-uint8_t led_state[4] = {0};
-
 // Functions Implementation 
 EN_APP_ErrorState_t  APP_init(void)
 {
-	if(LED_init(LED_PORT, LED_1_PIN) == LED_OK && LED_init(LED_PORT, LED_2_PIN) == LED_OK && LED_init(LED_PORT, LED_3_PIN) == LED_OK && LED_init(LED_PORT, LED_4_PIN) == LED_OK
-	 && BUTTON_init(BUTTON_PORT, BUTTON_PIN) == BUTTON_OK)
-	{
-		return APP_OK;
-	}
-	else
-	{
-		return APP_ERROR; 
-	}
+	LED_init(LED_PORT, LED_1_PIN);
+	LED_init(LED_PORT, LED_2_PIN);
+	LED_init(LED_PORT, LED_3_PIN);
+	LED_init(LED_PORT, LED_4_PIN);
+	
+	BUTTON_init(BUTTON_PORT, BUTTON_PIN);
+	
+	return APP_OK;
 }
 
 EN_APP_ErrorState_t  APP_start(void)
 {
+	
 	uint8_t buttonState = LOW; 
+	uint8_t pressNumber = 0;
 	
-	/* Led default state initialization */
-	LED_off(LED_PORT, LED_1_PIN);
-	LED_off(LED_PORT, LED_2_PIN);
-	LED_off(LED_PORT, LED_3_PIN);
-	LED_off(LED_PORT, LED_4_PIN);
-	
-	BUTTON_GetState(BUTTON_PORT, BUTTON_PIN, &buttonState);
+	while(1)
+	{
+			BUTTON_GetState(BUTTON_PORT, BUTTON_PIN, &buttonState);
+
+			if(buttonState == HIGH)
+			{
+				while(buttonState == HIGH)
+				{
+					BUTTON_GetState(BUTTON_PORT, BUTTON_PIN, &buttonState);
+				}
+				pressNumber++;
+			}
+			
+			switch(pressNumber)
+			{
+				case 1:
+				LED_on(LED_PORT, LED_1_PIN);
+				LED_off(LED_PORT, LED_2_PIN);
+				LED_off(LED_PORT, LED_3_PIN);
+				LED_off(LED_PORT, LED_4_PIN);
+				break;
+				case 2:
+				LED_on(LED_PORT, LED_1_PIN);
+				LED_on(LED_PORT, LED_2_PIN);
+				LED_off(LED_PORT, LED_3_PIN);
+				LED_off(LED_PORT, LED_4_PIN);
+				break;
+				case 3:
+				LED_on(LED_PORT, LED_1_PIN);
+				LED_on(LED_PORT, LED_2_PIN);
+				LED_on(LED_PORT, LED_3_PIN);
+				LED_off(LED_PORT, LED_4_PIN);
+				break;
+				case 4:
+				LED_on(LED_PORT, LED_1_PIN);
+				LED_on(LED_PORT, LED_2_PIN);
+				LED_on(LED_PORT, LED_3_PIN);
+				LED_on(LED_PORT, LED_4_PIN);
+				break;
+				case 5:
+				LED_off(LED_PORT, LED_1_PIN);
+				LED_on(LED_PORT, LED_2_PIN);
+				LED_on(LED_PORT, LED_3_PIN);
+				LED_on(LED_PORT, LED_4_PIN);
+				break;
+				case 6:
+				LED_off(LED_PORT, LED_1_PIN);
+				LED_off(LED_PORT, LED_2_PIN);
+				LED_on(LED_PORT, LED_3_PIN);
+				LED_on(LED_PORT, LED_4_PIN);
+				break;
+				case 7:
+				LED_off(LED_PORT, LED_1_PIN);
+				LED_off(LED_PORT, LED_2_PIN);
+				LED_off(LED_PORT, LED_3_PIN);
+				LED_on(LED_PORT, LED_4_PIN);
+				break;
+				case 8:
+				LED_off(LED_PORT, LED_1_PIN);
+				LED_off(LED_PORT, LED_2_PIN);
+				LED_off(LED_PORT, LED_3_PIN);
+				LED_off(LED_PORT, LED_4_PIN);
+				pressNumber = 0;
+				break;
+			}
+	}
 
 	
 	
