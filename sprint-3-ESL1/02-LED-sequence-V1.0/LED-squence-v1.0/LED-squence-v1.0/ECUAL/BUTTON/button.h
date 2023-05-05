@@ -11,6 +11,15 @@
 
 // includes
 #include "../../MCAL/DIO/dio.h"
+#include <util\delay.h>
+#define Debuncing_Ms  (50)
+typedef enum
+{
+	Pressed,
+	Not_Pressed
+}Button_state;
+
+#define Button_Sense_Pressed HIGH
 
 // typedefs
 typedef enum
@@ -26,7 +35,7 @@ typedef enum
 
 // functions prototypes
 EN_BUTTON_ErrorState_t  BUTTON_init(uint8_t buttonPort, uint8_t buttonPin);
-EN_BUTTON_ErrorState_t  BUTTON_GetState(uint8_t buttonPort, uint8_t buttonPin,uint8_t *value);
+Button_state  BUTTON_GetState(uint8_t buttonPort, uint8_t buttonPin,uint8_t *value);
 
 
 #endif /* BUTTON_H_ */

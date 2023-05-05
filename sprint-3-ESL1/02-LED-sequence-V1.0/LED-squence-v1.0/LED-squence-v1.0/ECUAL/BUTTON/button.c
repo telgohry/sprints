@@ -21,15 +21,30 @@ EN_BUTTON_ErrorState_t  BUTTON_init(uint8_t buttonPort, uint8_t buttonPin)
 	}
 }
 
-EN_BUTTON_ErrorState_t  BUTTON_GetState(uint8_t buttonPort, uint8_t buttonPin,uint8_t *value)
+
+
+//button state in not related
+Button_state  BUTTON_GetState(uint8_t buttonPort, uint8_t buttonPin,uint8_t *value)
 {
-	if(DIO_read(buttonPort, buttonPin, value) == DIO_OK)
+	Button_state ret_val = Not_Pressed;
+	DIO_read(buttonPort, buttonPin, value);
+	if(*value == Button_Sense_Pressed)
 	{
-		return BUTTON_OK;
+		 _delay_ms(Debuncing_Ms);
+		 DIO_read(buttonPort, buttonPin, value);
+		 if(*value == Button_Sense_Pressed)
+		 {
+			 *value = Pressed;
+		 }
+		 else
+		 {
+			 *value = Not_Pressed;
+		 }
 	}
 	else
 	{
-		return BUTTON_ERROR;
+		*value = Not_Pressed;
 	}
+	return  ret_val;
 }
 

@@ -20,6 +20,8 @@
 /* External Interrupt Request 2 */
 #define EXT_INT_2 __vector_3
 
+#define TIMER0_OVF __vector_11
+
 /* Set Global Interrupts, Set the I-bit in status register to 1 */
 #define sei() __asm__ __volatile__ ("sei" ::: "memory")
 

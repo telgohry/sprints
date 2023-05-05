@@ -9,6 +9,10 @@
 #ifndef TYPEDEFS_H_
 #define TYPEDEFS_H_
 
+#ifndef F_CPU 
+#define F_CPU (8000000LU)
+#endif
+
 typedef unsigned char uint8_t;
 
 

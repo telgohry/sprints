@@ -44,5 +44,13 @@
 #define GICR *((volatile uint8_t*)0x5B)
 #define GIFR *((volatile uint8_t*)0x5A)
 
+/************************************************************************/
+/*                   Timer0 Registers                      */
+/************************************************************************/
+#define TIMSK *((volatile uint8_t*)0x59)
+#define TCNT0 *((volatile uint8_t*)0x52)
+#define TCCR0 *((volatile uint8_t*)0x53)
+#define OCR0 *((volatile uint8_t*)0x5C)
+#define TIFR *((volatile uint8_t*)0x58)
 
 #endif /* REGISTERS_H_ */

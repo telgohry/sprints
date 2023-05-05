@@ -33,12 +33,8 @@ EN_APP_ErrorState_t  APP_start(void)
 	{
 			BUTTON_GetState(BUTTON_PORT, BUTTON_PIN, &buttonState);
 
-			if(buttonState == HIGH)
+			if(Pressed == buttonState)
 			{
-				while(buttonState == HIGH)
-				{
-					BUTTON_GetState(BUTTON_PORT, BUTTON_PIN, &buttonState);
-				}
 				pressNumber++;
 			}
 			
@@ -96,7 +92,6 @@ EN_APP_ErrorState_t  APP_start(void)
 			}
 	}
 
-	
 	
 	return APP_OK;
 }
